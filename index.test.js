@@ -13,3 +13,7 @@ test('return length of string', () => {
 test('reverse the string', () => {
     expect(index.reverseString('hello')).toBe('olleh');
   })
+
+test('Tcapitalize string', () => {
+    expect(index.capitalize('Tracy')).toBe('TRACY');
+  })

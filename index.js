@@ -9,4 +9,11 @@ const reverseString = (str) => {
     return str.split('').reverse().join('');
 }
 
-module.exports = {stringLength, reverseString};
+const capitalize = (string) => {
+    let regex = /^[A-za-z]*$/i;
+    if (regex.test(string)) {
+        return string.toUpperCase();
+    } return 'letters only!'
+}
+
+module.exports = {stringLength, reverseString, capitalize};
